@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from app.database import Base, engine
+from app.databace import Base, engine
 
 from api.health import router as health_router
 from api.orbit import router as orbit_router

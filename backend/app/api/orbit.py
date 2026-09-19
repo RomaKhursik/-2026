@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from app.database import get_db
+from app.databace import get_db
 from services.tle_service import get_latest_tle
 from services.orbit_service import create_satellite, propagate
 

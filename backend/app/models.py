@@ -4,7 +4,7 @@ from datetime import datetime
 from sqlalchemy import String, Float, DateTime, Text
 from sqlalchemy.orm import Mapped, mapped_column
 
-from app.database import Base
+from app.databace import Base
 
 
 class ISSTLE(Base):
