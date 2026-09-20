@@ -4,8 +4,8 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.databace import get_db
-from services.tle_service import get_latest_tle
-from services.orbit_service import create_satellite, propagate
+from app.services.tle_service import get_latest_tle
+from app.services.orbit_service import create_satellite, propagate
 
 
 router = APIRouter(

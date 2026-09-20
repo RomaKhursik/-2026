@@ -46,3 +46,10 @@ def propagate(
         "vy_km_s": velocity[1],
         "vz_km_s": velocity[2],
     }
+ISS_TLE = {
+    "name": "ISS",
+    "line1": "1 25544U 98067A   26090.50000000  .00010000  00000-0  18000-3 0  9999",
+    "line2": "2 25544  51.6400 100.0000 0005000 200.0000 160.0000 15.50000000123456"
+}
+def get_iss_tle():
+    return ISS_TLE

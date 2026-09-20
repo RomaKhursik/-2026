@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 from math import sqrt
 
-from services.orbit_service import propagate
+from app.services.orbit_service import propagate
 
 
 EARTH_RADIUS_KM = 6378.137

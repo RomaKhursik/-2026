@@ -2,12 +2,12 @@ from fastapi import FastAPI
 
 from app.databace import Base, engine
 
-from api.health import router as health_router
-from api.orbit import router as orbit_router
-from api.telemetry import router as telemetry_router
-from api.risks import router as risks_router
-from api.windows import router as windows_router
-from api.replay import router as replay_router
+from app.api.health import router as health_router
+from app.api.orbit import router as orbit_router
+from app.api.replay import router as replay_router
+from app.api.risks import router as risks_router
+from app.api.telemetry import router as telemetry_router
+from app.api.windows import router as windows_router
 
 
 Base.metadata.create_all(bind=engine)
